@@ -33,3 +33,11 @@ func FullKellyStrategy(
 
 	return fraction
 }
+
+func HalfKellyStrategy(bankroll float64, p float64, decimalOdds float64) float64 {
+	return FullKellyStrategy(bankroll, p, decimalOdds) / 2
+}
+
+func QuarterKellyStrategy(bankroll float64, p float64, decimalOdds float64) float64 {
+	return FullKellyStrategy(bankroll, p, decimalOdds) / 4
+}
